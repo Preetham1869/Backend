@@ -33,5 +33,6 @@ const mine = async() =>{
     const complete2= await mainCourse2("69");
     console.log("Completed", complete2);
     console.log("I'm done");
+    console.log("Thank you");
 };
 mine();
