@@ -34,5 +34,6 @@ const mine = async() =>{
     console.log("Completed", complete2);
     console.log("I'm done");
     console.log("Thank you");
+    console.log("do it again");
 };
 mine();
