@@ -6,23 +6,23 @@ const server = http.createServer((req, res) => {
     console.log(req.meathod);
     if (req.url === '/main') {
         res.writeHead(200, { 'content-type': 'application/json' });
-        res.end(JSON.stringify({ "page no": 1, message: "Its a fake main page nothing is going on here" }));
+        res.end(JSON.stringify({message: "Its a fake main page nothing is going on here" }));
     }
     else if (req.url === '/about') {
         res.writeHead(200, { 'content-type': 'application/json' });
-        res.end(JSON.stringify({ "page no": 2, message: "There is no about regarding about me in this page" }));
+        res.end(JSON.stringify({ message: "There is no about regarding about me in this page" }));
     }
     else if (req.url === '/contact') {
         res.writeHead(200, { 'content-type': 'application/json' });
-        res.end(JSON.stringify({ "page no": 3, message: "Don't contact me" }));
+        res.end(JSON.stringify({  message: "Don't contact me" }));
     }
     else if (req.url === '/info') {
         res.writeHead(200, { 'content-type': 'application/json' });
-        res.end(JSON.stringify({ "page no": 4, message: "if you want any information go to Google" }));
+        res.end(JSON.stringify({  message: "if you want any information go to Google" }));
     }
     else {
         res.writeHead(200, { 'content-type': 'text/plain' });
-        res.end("Backend Server");
+        res.end("Why u came here go back to IDE and do your work");
     }
 });
 server.listen(9000, () => {
